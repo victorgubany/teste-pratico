@@ -60,20 +60,5 @@ class CategorieController extends Controller
 
     }
 
-    // protected function generateSlug($name)
-    // {
-    //     $slug = Str::slug(Str::lower($name), '-');
-    //     $slug = preg_replace('/[^a-z0-9\-]/', '', $slug);
-
-    //     $originalSlug = $slug;
-    //     $count = 1;
-    //     while (Category::where('slug', $slug)->exists()) {
-    //         $slug = $originalSlug . '-' . $count;
-    //         $count++;
-    //     }
-
-    //     return $slug;
-    // }
-
 
 }
