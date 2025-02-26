@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class TaskController extends Controller
 {
+
     public function list(Request $request){
         if ($request->user('sanctum')) {
             $user = $request->user();
@@ -37,7 +38,6 @@ class TaskController extends Controller
     }
 
     public function create(Request $request){
-        //resolver quando é menor que 5
         if ($request->user('sanctum')) {
             $request->validate([
                 'name' => 'required|string|min:5',
