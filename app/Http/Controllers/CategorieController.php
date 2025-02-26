@@ -18,8 +18,6 @@ class CategorieController extends Controller
 
             $user = $request->user();
 
-            // preciso conferir se ja existe uma dessa com esse nome para esse usuario atraves do slug
-
             Categorie::create([
                 "user_id" => $user->id,
                 "name" => $request->name,
