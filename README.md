@@ -1,13 +1,14 @@
 Configurações de sistema :
-0. renomear o arquivo .env.example para .env e executar o comando php artisan key:generate
-1. no arquivo .env deverá ser posta as credenciais do banco de dados. Segue o exemplo:
+0. rodar o comando no terminal "composer install"
+ 
+1. renomear o arquivo .env.example para .env e executar o comando php artisan key:generate
+2. no arquivo .env deverá ser posta as credenciais do banco de dados. Segue o exemplo:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=teste1
 DB_USERNAME=root
 DB_PASSWORD=
-2. rodar o comando no terminal "composer install"
 3. rodar o comando no terminal "php artisan migrate"
 4. rodar o comando no terminal para iniciar a aplicação "php artisan serve"
 
